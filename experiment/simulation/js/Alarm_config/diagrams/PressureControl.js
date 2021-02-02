@@ -8,9 +8,15 @@ function PressureControl(){
     //x = 310;
 	//y = 160;
 	
-	x = 390;
+	
+if ($(window).width() <= 1368) {
+	 x = 390;
+	y = 90;
+  }else
+  {
+  x = 390;
 	y = 290;
-
+  }	
 	
 	 PL_tank = PL_Tank ((x-115), y);
 	
